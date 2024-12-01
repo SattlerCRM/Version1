@@ -1,0 +1,179 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+table {
+    width: 100%;
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+tr:nth-child(even) {
+    background-color: rgb(239, 239, 239);
+}
+
+#navbar {
+    display: block;
+    background-color: #333;
+    color: white;
+    width: 100%;
+    padding: 0px;
+
+}
+
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    margin: 0;
+    display: none;
+}
+
+h2 {
+    margin: 3px 15px;
+    padding: 10px 0;
+    display: inline-block;
+}
+
+button {
+    padding: 7px;
+    background-color: #308ef3;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin: 0;
+    border-radius: 10px;
+}
+
+.Löschen {
+    background-color: red;
+}
+
+input,
+select {
+    height: 22px;
+    border-radius: 10px;
+    border: solid;
+    border-color: black;
+    padding: 0 6px;
+    border-width: 1px;
+}
+
+a {
+    color: white
+}
+
+table button {
+    margin: 0 3px;
+}
+
+#navbar button {
+    float: right;
+    margin: 10px 7px;
+}
+
+button:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.hidden {
+    display: none;
+}
+
+#orderSection h1 {
+    display: inline-block;
+}
+
+section {
+    margin: 10px 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    display: block;
+}
+
+th,
+td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: rgb(239, 239, 239);
+    width: 25%;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label,
+input {
+    margin: 10px 0;
+}
+
+#orderDescription,
+#Ablauftermin {
+    margin: 0;
+}
+
+.Auftraghinzufügen {
+    margin-top: 10px;
+}
+
+li a {
+    background-color: #999;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li a:hover {
+    background-color: #666;
+}
+
+#links {
+    width: 100vw;
+    transition: max-height 0.7s;
+    max-height: 0;
+}
+
+#navbar h2 {
+    max-width: 69%;
+}
+
+hr {
+    border-radius: 10px;
+    margin: 3px 0;
+    width: 17px;
+    height: 2px;
+    border: none;
+    background-color: lightgray;
+}
+
+
+.Kundenverwaltungssystem {
+    font-size: 120%;
+}

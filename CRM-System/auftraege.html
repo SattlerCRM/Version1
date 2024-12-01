@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title class="Aufträge">Aufträge</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="media\imagemask.svg" type="image/x-icon">
+
+    <link rel="stylesheet" href="css/aufträge.css">
+    <script src="js/main.js" defer></script>
+    <script src="js/dates.js" defer></script>
+    <script src="js/lang.js" defer></script>
+    <script src="js/menu.js" defer></script>
+    <script src="js/customers.js" defer></script>
+    <script src="js/orders.js" defer></script>
+    <script src="js/coll.js" defer></script>
+</head>
+
+<body>
+    <div id="navbar">
+        <a href="index.html">
+            <h2 class="Kundenverwaltungssystem">Kundenverwaltungssystem</h2>
+        </a>
+        <button id="button">
+            <hr>
+            <hr>
+            <hr>
+        </button>
+        <ul id="links">
+            <li><a class="Kundenübersicht" href="kundenuebersicht.html">Kundenübersicht</a></li>
+            <li><a class="NeuenKundenregistrieren" href="kundenregistrierung.html">Neuen Kunden registrieren</a></li>
+            <li><a class="AlleAufträgeanzeigen" href="alleauftraege.html">Alle Aufträge anzeigen</a></li>
+            <li>
+                <a>
+                    <select name="" id="englishorspanish">
+                        <option value="de">Deutsch</option>
+                        <option value="en">English</option>
+                        <option value="es">Español</option>
+                    </select>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+
+    <section id="orderSection">
+        <button type="button" id="neworder">
+            <p class="NeuenAufragfür">Neuen Aufrag für</p>
+            <p class="customerName"></p>
+            <p class="erstellen">erstellen</p>
+        </button>
+        <div id="newordercontent">
+            <form id="orderForm">
+                <label class="Bundesland" for="state">Bundesland</label>
+                <select id="state" name="state" title="" required>
+                    <option class="Niedersachsen(NI)" value="NI">Niedersachsen (NI)</option>
+                    <option class="Nordrhein-Westfalen(NRW)" value="NRW">Nordrhein-Westfalen (NRW)</option>
+                </select>
+
+                <label class="Anlage" for="type">Anlage</label>
+                <select id="type" name="type" title="" required>
+                    <option class="Balkonkraftwerk(BK)" value="BK">Balkonkraftwerk (BK)</option>
+                    <option class="Wallbox(WL)" value="WL">Wallbox (WL)</option>
+                    <option class="Photovoltaikanlagen(PV)" value="PV">Photovoltaikanlagen (PV)</option>
+                </select>
+
+                <label class="Auftragsbeschreibung" for="orderDescription">Auftragsbeschreibung</label>
+                <input type="text" id="orderDescription" name="orderDescription" title="" required>
+
+                <label class="Straße" for="orderDescription">Straße</label>
+                <input type="text" id="Straße" name="Straße" title="" required>
+
+                <label class="Hausnummer" for="orderDescription">Hausnummer</label>
+                <input type="number" id="Hausnummer" name="Hausnummer" title="" required>
+
+                <label class="Stadt" for="orderDescription">Stadt</label>
+                <input type="text" id="Stadt" name="Stadt" title="" required>
+
+                <label class="Postleitzahl" for="orderDescription">Postleitzahl</label>
+                <input type="number" id="Postleitzahl" name="Postleitzahl" title="" required>
+
+                <label class="AblauftermininTagen" for="orderDescription">Ablauftermin in Tagen</label>
+                <input value="14" type="number" id="Ablauftermin" class="Ablauftermin" name="Ablauftermin" title=""
+                    required>
+
+                <button class="Auftraghinzufügen" type="submit">Auftrag hinzufügen</button>
+            </form>
+            <br>
+        </div>
+        <span id="aufträge">
+            <br>
+            <h1 class="Aufträgevon">Aufträge von</h1>
+            <h1> </h1>
+            <h1 class="customerName"></h1>
+            <table id="ordersTable">
+                <thead>
+                    <tr>
+                        <th class="ID">ID</th>
+                        <th class="Anlage">Anlage</th>
+                        <th class="Auftragsbeschreibung">Auftragsbeschreibung</th>
+                        <th class="Straße">Straße</th>
+                        <th class="Hausnummer">Hausnummer</th>
+                        <th class="Stadt">Stadt</th>
+                        <th class="Postleitzahl">Postleitzahl</th>
+                        <th class="Ablauftermin">Ablauftermin</th>
+                        <th class="Aktionen">Aktionen</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Aufträge werden hier eingefügt -->
+                </tbody>
+            </table>
+        </span>
+    </section>
+</body>
+
+</html>

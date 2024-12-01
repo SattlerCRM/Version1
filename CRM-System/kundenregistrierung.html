@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title class="Kundenregistrierung">Kundenregistrierung</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="media\imagemask.svg" type="image/x-icon">
+
+    <script src="js/main.js" defer></script>
+    <script src="js/dates.js" defer></script>
+    <script src="js/lang.js" defer></script>
+    <script src="js/menu.js" defer></script>
+    <script src="js/customers.js" defer></script>
+    <script src="js/orders.js" defer></script>
+</head>
+
+<body>
+    <div id="navbar">
+        <a href="index.html">
+            <h2 class="Kundenverwaltungssystem">Kundenverwaltungssystem</h2>
+        </a>
+        <button id="button">
+            <hr>
+            <hr>
+            <hr>
+        </button>
+        <ul id="links">
+            <li><a class="Kundenübersicht" href="kundenuebersicht.html">Kundenübersicht</a></li>
+            <li><a class="NeuenKundenregistrieren" href="kundenregistrierung.html">Neuen Kunden registrieren</a></li>
+            <li><a class="AlleAufträgeanzeigen" href="alleauftraege.html">Alle Aufträge anzeigen</a></li>
+            <li><a><select name="" id="englishorspanish">
+                        <option value="de">Deutsch</option>
+                        <option value="en">English</option>
+                        <option value="es">Español</option>
+                    </select></a></li>
+        </ul>
+    </div>
+    <section id="customerFormSection">
+        <form id="customerForm">
+            <label class="Name" for="name">Name</label>
+            <input type="text" id="name" name="name" title="" required>
+
+            <label class="lastname" for="lastname">Nachname</label>
+            <input type="text" id="lastname" name="lastname" title="" required>
+
+            <label class="birthday" for="birthday">Geburstag</label>
+            <input type="date" id="birthday" name="birthday" title="" required>
+
+            <label class="Email" for="email">Email</label>
+            <input type="email" id="email" name="email" title="" required>
+
+            <label class="Telefon" for="phone">Telefon</label>
+            <input type="tel" id="phone" name="phone" title="" required>
+            <br>
+            <button class="Kundenregistrieren" type="submit" title="">Kunden registrieren</button>
+        </form>
+    </section>
+</body>
+
+</html>
